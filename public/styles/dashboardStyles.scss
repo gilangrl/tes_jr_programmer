@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html,
+body{
+    background-color: #000000;
+}
+
+$DashboardBG__primary: #000000;
+$DashboardText__primary: #ffffff;
+$DashboardContent__primary: #ffffff;
+$DashboardContent__Text: #313131;
+$btnCta__primary: #000000;
+$btn__Destroy: rgb(224, 38, 38);
+
+.dashboardContainer__das{
+    background-color: $DashboardBG__primary;
+    .dashboardContent__wrapper{
+        display: flex;
+        flex-direction: column;
+        .dashboardInner__wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .dashboardSide__nav{
+                background-color: $DashboardBG__primary;
+                position: fixed;
+                width: 350px;
+                height: 100vh;
+                overflow: hidden;
+                &::before{
+                    content: "";
+                    height: 580px;
+                    width: 280px;
+                    bottom: -10%;
+                    // left: -20%;
+                    right: 0;
+                    // transform: rotate(40deg);
+                    background-color: rgb(48, 48, 48);
+                    display: block;
+                    position: absolute;
+                    z-index: 3;
+                    // filter: blur(80px);
+                    opacity: 50%;
+                    border-top-left-radius: 30px;
+                }
+                .navSide__logo{
+                    justify-content: center;
+                    display: flex;
+                    margin: auto;
+                    span{
+                        padding: 3em 1.2em;
+                        .logo__img{
+                            width: 240px;
+                            height: auto;
+                            object-fit: cover;
+                            pointer-events: none;
+                        }
+                    }
+                }
+                .sideNav__list a{
+                    text-decoration: none;
+                }
+                .sideNav__list {
+                    padding: 2em 0;
+                    margin: 15px;
+                    .navDash__wrapper{
+                        list-style: none;
+                        .nav__Sidelinks{
+                            display: block;
+                            position: relative;
+                            .navSide__Db{
+                                margin: 1em;
+                                padding: 1em;
+                                border-radius: 10px;
+                                font-weight: 300;
+                                transition: ease-in-out .2s ;
+                                &:hover{
+                                    background-color: rgb(48, 48, 48);
+                                }
+                                .nav__links{
+                                    display: block;
+                                    font-family: "Poppins", sans-serif;
+                                    color: $DashboardText__primary;
+                                    align-items: center;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 250px;
+                                    gap: 10px;
+                                }
+                            }
+                            .active{
+                                background-color: rgb(78, 78, 78);
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dashboardSide__container{
+            margin: 20px 20px 20px 358px;
+            background-color: $DashboardContent__primary;
+            width: 100vw;
+            height: 100%;
+            border-radius: 40px;
+            .dashboardSide{
+                .dashContent__wrapper{
+                    margin: 2em;
+                }
+                .navTop{
+                    margin: 2em 0;
+                    span{
+                        font-size: 3em;
+                        font-family: 'Poppings', sans-serif;
+                        color: $DashboardContent__Text;
+                    }
+
+                }
+            }
+            .dashboardContent__container{
+                .content__wrap{
+                    .btn__ctaData{
+                        margin: 2em 0;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .btn__cta{
+                            padding: 1em 20px;
+                            border: none;
+                            cursor: pointer;
+                            background-color: $btnCta__primary;
+                            color: $DashboardText__primary;
+                            font-family: 'Poppins', sans-serif;
+                            &:hover{
+                                background-color: #313131;
+                            }
+                        }
+                    }
+                }
+                .dataTables_wrapper{
+                    font-family: 'Poppins', sans-serif;
+                    margin: 8em 0;
+                    .dataTables_info{
+                        margin: 2em 0;
+                    }
+                    .dataTables_paginate{
+                        margin: 2em 0;
+                        .paginate_button{
+                            background-color: $btnCta__primary;
+                            color: #929292 !important;
+                        }
+                        .current{
+                            color: #ffffff !important;
+                        }
+                        .previous {
+                            color: rgb(189, 189, 189) !important;
+                            &:hover{
+                                color: #ffffff !important;
+                            }
+                        }
+                        .disabled{
+                            color: rgb(143, 143, 143) !important;
+                        }
+                        .next{
+                            color: rgb(189, 189, 189) !important;
+                            &:hover{
+                                color: #ffffff !important;
+                            }
+                        }
+                    }
+                    .dataTables_length{
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.btn__editCta{
+    background-color: $btnCta__primary;
+    color: $DashboardText__primary;
+    .fa-edit{
+        color: $DashboardText__primary;
+
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.btn__destroyCta{
+    background-color: $btn__Destroy;
+    .fa-trash{
+        color: $DashboardText__primary;
+    }
+}
+
+.modal-footer{
+    .btnSave{
+        background-color: $btnCta__primary;
+        color: $DashboardText__primary;
+        &:hover{
+            color: $DashboardText__primary;
+            background-color: #313131;
+        }
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.sweetAlert__class{
+    margin: 3em;
+    width: 80rem;
+    font-family: 'Poppins', sans-serif;
+    .swal2-title{
+        font-weight: 500;
+        line-height: 1.2em;
+        font-size: 3em !important;
+    }
+    .swal2-html-container{
+        font-size: 2em;
+        margin: 2em 2em !important;
+        line-height: 1.2em;
+        overflow: hidden;
+        font-weight: 300;
+    }
+    .swal2-actions{
+        .swal2-confirm{
+            font-size: 1.5em;
+            padding: 10px 2em;
+            border-radius: 0;
+            background-color: $btnCta__primary !important;
+            color: $DashboardText__primary !important;
+            &:focus{
+                -webkit-tap-highlight-color: transparent !important;
+            }
+        }
+        .swal2-cancel{
+            font-size: 1.5em;
+            padding: 10px 2em;
+            border-radius: 0;
+        }
+    }
+}
+
+.sweetAlert__success{
+    margin: 3em;
+    width: 80rem;
+    font-family: 'Poppins', sans-serif;
+    .swal2-title{
+        font-weight: 500;
+        line-height: 1.2em;
+        font-size: 3em !important;
+        padding-bottom: 80px;
+    }
+}

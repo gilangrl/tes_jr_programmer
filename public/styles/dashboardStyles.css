@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #3f0e0e;
+}
+
+.dashboardContainer__das {
+  background-color: #3f0e0e;
+}
+.dashboardContainer__das .dashboardContent__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav {
+  background-color: #464642;
+  position: fixed;
+  width: 350px;
+  height: 100vh;
+  overflow: hidden;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav::before {
+  content: "";
+  height: 580px;
+  width: 280px;
+  bottom: -10%;
+  right: 0;
+  background-color:rgb(141, 112, 50);
+  display: block;
+  position: absolute;
+  z-index: 3;
+  opacity: 50%;
+  border-top-left-radius: 30px;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .navSide__logo {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .navSide__logo span {
+  padding: 3em 1.2em;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .navSide__logo span .logo__img {
+  width: 240px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .sideNav__list a {
+  text-decoration: none;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .sideNav__list {
+  padding: 2em 0;
+  margin: 15px;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .sideNav__list .navDash__wrapper {
+  list-style: none;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .sideNav__list .navDash__wrapper .nav__Sidelinks {
+  display: block;
+  position: relative;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .sideNav__list .navDash__wrapper .nav__Sidelinks .navSide__Db {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  font-weight: 300;
+  transition: ease-in-out 0.2s;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .sideNav__list .navDash__wrapper .nav__Sidelinks .navSide__Db:hover {
+  background-color: rgb(48, 48, 48);
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .sideNav__list .navDash__wrapper .nav__Sidelinks .navSide__Db .nav__links {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 250px;
+  gap: 10px;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardInner__wrapper .dashboardSide__nav .sideNav__list .navDash__wrapper .nav__Sidelinks .active {
+  background-color: rgb(78, 78, 78);
+  font-weight: 400;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container {
+  margin: 20px 20px 20px 358px;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100%;
+  border-radius: 40px;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardSide .dashContent__wrapper {
+  margin: 2em;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardSide .navTop {
+  margin: 2em 0;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardSide .navTop span {
+  font-size: 3em;
+  font-family: "Poppings", sans-serif;
+  color: #313131;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .content__wrap .btn__ctaData {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .content__wrap .btn__ctaData .btn__cta {
+  padding: 1em 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .content__wrap .btn__ctaData .btn__cta:hover {
+  background-color: #313131;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper {
+  font-family: "Poppins", sans-serif;
+  margin: 8em 0;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper .dataTables_info {
+  margin: 2em 0;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper .dataTables_paginate {
+  margin: 2em 0;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper .dataTables_paginate .paginate_button {
+  background-color: #000000;
+  color: #929292 !important;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper .dataTables_paginate .current {
+  color: #ffffff !important;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper .dataTables_paginate .previous {
+  color: rgb(189, 189, 189) !important;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper .dataTables_paginate .previous:hover {
+  color: #ffffff !important;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper .dataTables_paginate .disabled {
+  color: rgb(143, 143, 143) !important;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper .dataTables_paginate .next {
+  color: rgb(189, 189, 189) !important;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper .dataTables_paginate .next:hover {
+  color: #ffffff !important;
+}
+.dashboardContainer__das .dashboardContent__wrapper .dashboardSide__container .dashboardContent__container .dataTables_wrapper .dataTables_length {
+  font-weight: 300;
+}
+
+.btn__editCta {
+  background-color: #000000;
+  color: #ffffff;
+}
+.btn__editCta .fa-edit {
+  color: #ffffff;
+}
+.btn__editCta:focus {
+  outline: none;
+}
+
+.btn__destroyCta {
+  background-color: rgb(224, 38, 38);
+}
+.btn__destroyCta .fa-trash {
+  color: #ffffff;
+}
+
+.modal-footer .btnSave {
+  background-color: #000000;
+  color: #ffffff;
+}
+.modal-footer .btnSave:hover {
+  color: #ffffff;
+  background-color: #313131;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.sweetAlert__class {
+  margin: 3em;
+  width: 80rem;
+  font-family: "Poppins", sans-serif;
+}
+.sweetAlert__class .swal2-title {
+  font-weight: 500;
+  line-height: 1.2em;
+  font-size: 3em !important;
+}
+.sweetAlert__class .swal2-html-container {
+  font-size: 2em;
+  margin: 2em 2em !important;
+  line-height: 1.2em;
+  overflow: hidden;
+  font-weight: 300;
+}
+.sweetAlert__class .swal2-actions .swal2-confirm {
+  font-size: 1.5em;
+  padding: 10px 2em;
+  border-radius: 0;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+.sweetAlert__class .swal2-actions .swal2-confirm:focus {
+  -webkit-tap-highlight-color: transparent !important;
+}
+.sweetAlert__class .swal2-actions .swal2-cancel {
+  font-size: 1.5em;
+  padding: 10px 2em;
+  border-radius: 0;
+}
+
+.sweetAlert__success {
+  margin: 3em;
+  width: 80rem;
+  font-family: "Poppins", sans-serif;
+}
+.sweetAlert__success .swal2-title {
+  font-weight: 500;
+  line-height: 1.2em;
+  font-size: 3em !important;
+  padding-bottom: 80px;
+}/*# sourceMappingURL=dashboardStyles.css.map */
