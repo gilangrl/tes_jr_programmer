@@ -6,7 +6,7 @@
 ```sh
 composer install
 ```
-
+-   Create new database, then change the .env
 ```sh
 cp .env.example .env
 ```
@@ -15,7 +15,7 @@ cp .env.example .env
 php artisan key:generate
 ```
 
--   Create new database, then change the .env
+
 
 ```sh
 php artisan migrate
