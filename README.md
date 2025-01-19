@@ -1,5 +1,3 @@
-# Tes_Jr.Programmer
- 
 # Getting Started
 ### Installation
 
